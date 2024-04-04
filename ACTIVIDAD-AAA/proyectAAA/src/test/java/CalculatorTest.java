@@ -52,7 +52,7 @@ public class CalculatorTest {
         //Act
         double resultado = calculador.division(numeroA, numeroB);
         //Assert
-        assertEquals(2.0, resultado, "10 / inf deberia ser 0.0");
+        assertEquals(2.0, resultado, "10 / 5 deberia ser 2.0");
     }
 
     @Test
@@ -68,4 +68,6 @@ public class CalculatorTest {
             calculador.division(numeroA, numeroB);
         }, "División por cero debe lanzar ArithmeticException");
     }
+
+
 }
