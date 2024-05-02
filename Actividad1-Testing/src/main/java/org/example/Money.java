@@ -1,25 +1,25 @@
 package org.example;
 
 public class Money {
-    private final int amount;
-    private final String currency;
-    public Money(int amount, String currency) {
+    private final int amount; // amount = la cantidad de dinero
+    private final String currency;//currency = el tipo de la moneda
+    public Money(int amount, String currency) { //constructor
         this.amount = amount;
         this.currency = currency;
     }
     public int getAmount() {
         return amount;
-    }
+    } //getters para obtener los atributos
     public String getCurrency() {
         return currency;
-    }
-    public boolean equals(Object anObject) {
-        if (anObject instanceof Money) {
-            Money money = (Money) anObject;
-            return getCurrency().equals(money.getCurrency())
-                    && getAmount() == money.getAmount();
+    }//getters para obtener los atributos
+    public boolean equals(Object anObject) {//metodo equals para saber si dos objetos son iguales
+        if (anObject instanceof Money) {//si el objeto es de la clase money
+            Money money = (Money) anObject; //convierte el objeto en money
+            return getCurrency().equals(money.getCurrency())//compara las monedas
+                    && getAmount() == money.getAmount();//compara las cantidades
         }
-        return false;
+        return false;//devuelve falso
     }
 
 }
