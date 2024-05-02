@@ -4,6 +4,10 @@ public class Money {
     private final int amount; // amount = la cantidad de dinero
     private final String currency;//currency = el tipo de la moneda
     public Money(int amount, String currency) { //constructor
+        if(amount<0){
+            throw new IllegalArgumentException("ilegal amount: ["+amount+"]");
+            //comprueba que la cantidad sea positiva y no negativa
+        }
         this.amount = amount;
         this.currency = currency;
     }

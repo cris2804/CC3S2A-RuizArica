@@ -43,6 +43,47 @@ Output indirecto : **`calculator.calculateBonus(clientType, payment)`,`clientDAO
 
 ### **Razones para Preocuparse por Interacciones Indirectas**
 
-1. **Impacto en el Cliente**: Las interacciones indirectas, aunque no involucran contacto directo con el cliente, pueden afectar significativamente la calidad del servicio o producto final entregado al cliente.
-2. **Efecto Cascada**: Un error en un nivel inferior puede propagarse a través de las interacciones indirectas y magnificar problemas en niveles superiores.
-3. **Dependencias Ocultas**: Las interacciones indirectas a menudo revelan dependencias no evidentes entre componentes o roles, que pueden ser críticas para la estabilidad y eficiencia del sistema.
+a. **Impacto en el Cliente**: Las interacciones indirectas, aunque no involucran contacto directo con el cliente, pueden afectar significativamente la calidad del servicio o producto final entregado al cliente.
+
+b. **Efecto Cascada**: Un error en un nivel inferior puede propagarse a través de las interacciones indirectas y magnificar problemas en niveles superiores.
+
+c. **Dependencias Ocultas**: Las interacciones indirectas a menudo revelan dependencias no evidentes entre componentes o roles, que pueden ser críticas para la estabilidad y eficiencia del sistema.
+
+
+4. Completa en la actividad dada en el repositorio el código fuente para pasar las pruebas.
+Uno de los test hechos en clase **`MoneyOneParamAnnotationTest`** y **`MoneyManyValueTest`**
+```java
+
+public class MoneyOneParamAnnotationTest {
+    @ParameterizedTest
+    @ValueSource(ints = {10, 20, 30}) //proveedor de datos de prueba
+    void constructoShouldAmountCurrency(int amount) {
+        Money money = new Money(amount, "USD");
+        assertThat(money.getAmount()).isEqualTo(amount);
+    }
+
+}
+
+test2
+public class MoneyManyValueTest {
+    //evaluar la cantidad de monedas sin cambiar la moneda y sin usar @ValueSource
+    @Test //sirve para probar multiples test
+    void constructorShouldSetAmountAndCurrency() {
+        Money money = new Money(10, "USD");
+        assertThat(money.getAmount()).isEqualTo(10);
+        assertThat(money.getCurrency()).isEqualTo("USD");
+        money = new Money(20, "EUR");
+        assertThat(money.getAmount()).isEqualTo(20);
+        assertThat(money.getCurrency()).isEqualTo("EUR");
+    }
+}
+
+```
+![image](images/MoneyManyValueTest.png)
+![image](images/MoneyOneParamAnnotationTest.png)
+
+
+5. ¿Cuál es la diferencia entre una prueba unitaria y otros tipos de pruebas, como las pruebas de
+   integración o las pruebas de aceptación? 
+
+Mientras que las pruebas unitarias se centran en probar unidades individuales de código, las pruebas de integración se centran en la interacción entre esas unidades, y las pruebas de aceptación se centran en verificar si el software cumple con los requisitos y expectativas del cliente

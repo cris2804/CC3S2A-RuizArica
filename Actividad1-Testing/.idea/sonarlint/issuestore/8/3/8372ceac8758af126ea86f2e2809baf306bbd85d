@@ -1,5 +1,5 @@
 
 Œ
-java:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(é¤ŞJ$6771e340-c080-409c-997a-71cc42bede9a
+java:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(é¤ŞJ$2b59c858-021f-4e15-bafc-aed8e3343b10
 €
-java:S6201"DReplace this instanceof check and cast with 'instanceof Money money'(ÏªÈ¿J$c66408f0-c93b-401c-b754-fa4e35d02baa
+java:S6201"DReplace this instanceof check and cast with 'instanceof Money money'(ÏªÈ¿J$3d6763e3-e5c6-4408-ae38-3469b6611372
