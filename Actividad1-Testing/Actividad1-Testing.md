@@ -2,7 +2,7 @@
 
 1. Explica el siguiente gráfico en términos de SUT y DOC para pruebas unitarias
 
-![image](/images/Untitled.png)
+![image](images/Untitled.png)
 
 El gráfico proporcionado ilustra la interacción entre una clase de prueba, el sistema bajo prueba (SUT) y los objetos colaboradores dependientes (DOC) en el contexto de pruebas unitarias.
 Interacciones:
