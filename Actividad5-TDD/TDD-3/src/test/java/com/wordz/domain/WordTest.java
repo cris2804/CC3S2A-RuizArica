@@ -9,9 +9,46 @@ public class WordTest {
     @Test
     public void oneIncorrectLetter() {
         var word = new Word("A");
-        var score = word.guess("A");
-        assertThat(score.letter(0)).isEqualTo(CORRECT);
+        var score = word.guess("B");
+        assertThat(score.letter(0)).isEqualTo(INCORRECT);
     }
-    // Completa...
+    @Test
+    public void oneCorrectLetter() {
+        //arrange
+        var word = new Word("A");
+        //act
+        var score = word.guess("A");
+        //assert
+       assertScoreForLetter(score, 0, CORRECT);
+    }
+
+    private void assertScoreForLetter(Score score, int position, Letter expected) {
+        assertThat(score.letter(position)).isEqualTo(expected);
+    }
+
+    @Test
+    void secondLetterWrongPossition() {//segunda letra posición incorrecta
+        var word = new Word("AR");
+        var score = word.guess("ZA");
+
+            assertScoreForLetter(score,1, Letter.PART_CORRECT);
+    }
+
+    @Test
+    void allScoreCombinations(){
+        //arrange
+        var word = new Word("ARI");
+        //act
+        var score = word.guess("ZAI");
+        //assert
+        assertScoreForGuess(score,INCORRECT, PART_CORRECT, CORRECT);//revisar que el puntaje sea el correcto para cada letra
+    }
+
+    private void assertScoreForGuess(Score score, Letter...expectedScores) {
+        for (int position=0; position<expectedScores.length; position++) {
+            Letter expected = expectedScores[position];
+            assertThat(score.letter(position)).isEqualTo(expected);
+        }
+    }
 
 }

@@ -10,7 +10,8 @@ public class Word {
     public Score guess(String attempt) {
         var score = new Score(word);
 
-        score.assess(0, attempt);
-        return score;
+        score.assess( attempt);//evalua la primer letra de la palabra que va a ser adivinada
+        return score;//retorna el puntaje
+
     }
 }
