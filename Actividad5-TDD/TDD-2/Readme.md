@@ -1,4 +1,4 @@
-# Actividad TDD1
+# Actividad TDD2
 
 1. Escribe el siguiente código para comenzar nuestra prueba:
 
