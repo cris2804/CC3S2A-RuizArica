@@ -1,0 +1,8 @@
+
+‹
+java:S3824"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".(¢²šã8ğ¿ñ·ù1J$a3878292-1c86-4044-9e4d-97cfe48a2de9
+Š
+java:S2094"BRemove this empty class, write its code or make it an "interface".(’¬ô£ÿÿÿÿÿ8ø¿ñ·ù1J$71ce6dbb-4091-4b09-be47-789c25a17c0a
+}
+java:S1118":Add a private constructor to hide the implicit public one.(íè®8ÁÀñ·ù1J$5d2e328b-c026-4229-ab58-b5c735e8d0ab
+{	java:S106#"9Replace this use of System.out or System.err by a logger.(Îìæë8ÚÀñ·ù1J$1bd84d7a-8040-4483-96fb-e1bc59a3fad2
