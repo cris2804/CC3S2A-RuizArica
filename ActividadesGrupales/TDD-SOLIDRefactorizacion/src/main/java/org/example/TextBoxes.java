@@ -1,20 +1,19 @@
 package org.example;
 
-import java.awt.*;
 
+public class TextBoxes implements Shape {
 
-public class TextBoxes extends Shape {
-
-    private String text;
+    private final String text;
 
     public TextBoxes(String text) {
         this.text = text;
-        this.type = "textbox";
-
     }
 
-
+    @Override
     public void draw(Graphics g) {
-        g.drawString(text);
+        g.drawText(g.toString());
+    }
+    public void drawText(Graphics g) {
+        g.drawText(text);
     }
 }

@@ -1,10 +1,4 @@
 
-m	java:S106
-"+Replace this use of System.out by a logger.(ÆÞŸ‡8¸Œ–—ü1J$e7f8c240-cac8-4615-ac08-e73344ee85da
-i	java:S131""Add a default case to this switch.(Ê´Ã‰ûÿÿÿÿ8»‚ç–ü1J$3d839942-c6fa-4a4c-ac77-f71cdad99514
-“
-java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(Ê´Ã‰ûÿÿÿÿ8½‚ç–ü1J$3da33957-67c9-4e12-a81d-97e956ef068c
-œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(úÁ‰Óÿÿÿÿÿ8ÂŒ–—ü1J$b5c2286f-d210-4e0a-9eb6-9b7699280ca7
-—
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(„¢ð†8ÂŒ–—ü1J$3b56d7a7-1b36-4df0-b485-d8fd3510ee34
+u
+java:S6201"XReplace this instanceof check and cast with 'instanceof DrawingStrategy drawingstrategy'(‡Ñ›î8†…Ô·ý1
+~	java:S125"<This block of commented-out lines of code should be removed.(—Þ²Ã8ÚµŸ†ý1J$68e00de1-a5ed-4a97-ba2b-5a8bcd89a4da

@@ -1,30 +1,10 @@
 
-T
-$src/main/java/org/example/Money.java,8\3\8372ceac8758af126ea86f2e2809baf306bbd85d
-X
-(src/test/java/org/example/MoneyTest.java,b\c\bcb9eddbf216e4b8600ca6279ea4f50da613362c
-Y
-)src/test/java/org/example/ClientTest.java,d\e\dee1cdb932e80f4be62b572fbecb8211b69ecf17
-U
-%src/main/java/org/example/Client.java,c\a\ca008ce1ad5125494d92c1098a582d3287b5d915
-V
-&src/main/java/org/example/Address.java,1\e\1e0305254b6069712aa74b4ef3b7eec09da67eb4
-j
-:src/test/java/org/example/MoneyOneParamAnnotationTest.java,2\a\2a2d185046f980dbade7cf6d764c2e24f2b720e5
-a
-1src/test/java/org/example/MoneyManyValueTest.java,8\a\8a5045d6c93070924c2a256b3bd3cb550148df02
-l
-<src/test/java/org/example/MoneyManyParamsAnnotationTest.java,c\a\ca61cee0fd74cd6e9f212bea9fbc598e0a34149e
-o
-?src/test/java/org/example/MoneyIlegalArgumentExceptionTest.java,d\c\dc39f19cbda1eed555d82966546981f4cc94f484
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 7
 gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
 ;
 gradlew.bat,2\a\2a45a911a8f1836b0b6c5b758962572012d8f8c3
-9
-	Readme.md,0\c\0c1945d7443c2e154bd3e421c0d438bd4086d8c3
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 U
@@ -39,3 +19,27 @@ X
 (src/main/java/org/example/Rectangle.java,4\e\4e88dc259387934623bfe4daa53c629298db4cb9
 ^
 .src/main/java/org/example/ConsoleGraphics.java,6\8\684f843011f90c4cf62d6f8925916a9ab1c3a60d
+]
+-src/main/java/org/example/MaliciousShape.java,b\a\bac3b5141cf108c62d65c8c5f2045bdfe07594f9
+Y
+)src/main/java/org/example/RightArrow.java,4\0\40f2f1368004f60f3d8511e0ed5565cbc1f17ee6
+[
++src/main/java/org/example/ShapeExample.java,4\c\4c45928337db2af5c88d3cf95e96461d434b66b8
+U
+%src/main/java/org/example/Circle.java,6\e\6e25a2a4fd98246d80ea636395a05cebf48dc27d
+\
+,src/test/java/org/example/RectangleTest.java,4\b\4b862851ae06be35fdf9edc38eb62aca513e81de
+]
+-src/test/java/org/example/RightArrowTest.java,8\6\861cd3d81f6e3977c2ec6a15e9c7a3da5aa59bcd
+Y
+)src/test/java/org/example/CircleTest.java,b\1\b176049b1f4358cad50aa36da6dbca8093735bc0
+\
+,src/test/java/org/example/TextBoxesTest.java,8\a\8ad4a065d348a98a97f680916c459e54a2ba7c74
+^
+.src/main/java/org/example/DrawingStrategy.java,2\f\2fdffb33c6372e8314fbeb7a240273759b4bd7a6
+M
+src/test/java/ShapesTest.java,8\0\804f60d77c21b02692ae512f188cb38e8afe60d1
+Y
+)src/test/java/org/example/ShapesTest.java,e\a\eaf585fbf27b9b63cacbdd38933c96e6cfc0c48f
+9
+	Readme.md,0\c\0c1945d7443c2e154bd3e421c0d438bd4086d8c3

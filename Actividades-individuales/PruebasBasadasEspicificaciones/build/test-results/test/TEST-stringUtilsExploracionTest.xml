@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="stringUtilsExploracionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-27T17:49:07" hostname="LAPTOP-662VNBS9" time="0.017">
+  <properties/>
+  <testcase name="testSubstringsBetween()" classname="stringUtilsExploracionTest" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

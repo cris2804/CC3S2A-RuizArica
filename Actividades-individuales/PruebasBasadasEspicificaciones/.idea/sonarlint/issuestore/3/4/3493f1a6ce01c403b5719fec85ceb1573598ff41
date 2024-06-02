@@ -1,4 +1,10 @@
 
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ήδ…Ρ
-X
-java:S2094"BRemove this empty class, write its code or make it an "interface".(ήδ…Ρ
+›	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(£Η²¤8όª“Ωϋ1J$5b07e998-7ebb-4c28-9c24-8c76875cb030
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ήδ…Ρ8«“Ωϋ1J$e1cd03df-435c-46c2-86e7-c6c114b7e58b
+}
+java:S1118":Add a private constructor to hide the implicit public one.(ήδ…Ρ8•«“Ωϋ1J$1201ded9-bd05-4424-9adf-a269669bb9a7
+i
+java:S1168
+"&Return an empty array instead of null.(¥Ήο8Ά«“Ωϋ1J$c791da4d-0806-4521-bfe7-60493a807701
+i
+java:S1168""&Return an empty array instead of null.(¥Ήο8¶«“Ωϋ1J$aad889f5-3c9f-416d-a90e-f5bf26f405d8
