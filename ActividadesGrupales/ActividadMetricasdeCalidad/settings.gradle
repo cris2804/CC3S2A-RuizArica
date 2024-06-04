@@ -15,4 +15,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'Microwave_Gradle_fbinfer'
+rootProject.name = 'Metricas'

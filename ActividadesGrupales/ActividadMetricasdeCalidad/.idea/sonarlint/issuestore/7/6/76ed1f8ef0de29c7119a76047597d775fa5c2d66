@@ -1,0 +1,10 @@
+
+˜
+java:S1192G"PDefine a constant instead of duplicating this literal "peliculaManager" 5 times.(¹µãÿÿÿÿÿ8Ğ¬ÎÛı1J$1c93bf91-8bbb-41ba-b5bd-14095246fddd
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(š…‹åJ$d67a8b16-18f3-4ac6-9aa9-3eaf8bc50642
+˜
+java:S11493"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ƒÿƒ—ùÿÿÿÿ8‡­ÎÛı1J$a731bd54-1223-4f63-99bb-54bd3894ca3c
+˜
+java:S11493"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ƒÿƒ—ùÿÿÿÿ8ˆ­ÎÛı1J$ce2c2297-8fce-4558-b6f2-30540bdc2d0c
+X	java:S125M"<This block of commented-out lines of code should be removed.(³‹ÄÏ8ÚèÛı1
+€	java:S106R"9Replace this use of System.out or System.err by a logger.(ß·¦¤ıÿÿÿÿ8™­ÎÛı1J$0deb2655-1b95-4561-94dd-5e1c03bed6f0

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Microwave_Gradle_fbinfer.iml" filepath="$PROJECT_DIR$/.idea/modules/Microwave_Gradle_fbinfer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Microwave_Gradle_fbinfer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Microwave_Gradle_fbinfer.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Microwave_Gradle_fbinfer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Microwave_Gradle_fbinfer.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Metricas.iml" filepath="$PROJECT_DIR$/.idea/modules/Metricas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Metricas.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Metricas.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Metricas.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Metricas.test.iml" />
     </modules>
   </component>
 </project>
