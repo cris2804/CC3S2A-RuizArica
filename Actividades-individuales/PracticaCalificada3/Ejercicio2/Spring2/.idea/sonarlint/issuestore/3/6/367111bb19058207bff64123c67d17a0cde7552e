@@ -1,0 +1,28 @@
+
+
+java:S1192"KDefine a constant instead of duplicating this literal "mover este" 3 times.(§Ãüã8¶˜×Æş1J$42b5bff9-d05a-4a6d-b5ed-b0d7bcc8ea0c
+’
+java:S1192"JDefine a constant instead of duplicating this literal "mover sur" 3 times.(Ú÷³‘ùÿÿÿÿ8¶˜×Æş1J$40365145-ca0d-47b1-8e79-2d24c8ffbc67
+”
+java:S1192 "LDefine a constant instead of duplicating this literal "mover oeste" 3 times.(‚™Şìüÿÿÿÿ8¶˜×Æş1J$1f5d985d-fe5d-478c-84cd-1afa1c9e6dd8
+”
+java:S1192"LDefine a constant instead of duplicating this literal "mover norte" 3 times.(‰®¹ ıÿÿÿÿ8·˜×Æş1J$3e69dd55-92ee-48a1-be3d-ce752b55f818
+¢
+java:S1450	"ZRemove the "movimientos" field and declare it as a local variable in the relevant methods.(Û¡¯šûÿÿÿÿ8ê™‡Æş1J$5c3fa8b9-4372-41b5-a9dd-fd1c50702664
+r	java:S106"+Replace this use of System.out by a logger.(Ø˜ß›øÿÿÿÿ8ò™‡Æş1J$32ace230-2fd7-42f6-b0a7-c7fd7aa7c24b
+m	java:S106"+Replace this use of System.out by a logger.(Ô‡Ñ–8ó™‡Æş1J$3d067f02-839d-4595-9bb7-eb54c1f82dd1
+m	java:S106"+Replace this use of System.out by a logger.(›ğ»“8¬ ›Æş1J$e33fe447-ab4e-4b6e-8211-35d9f5354871
+r	java:S106"+Replace this use of System.out by a logger.(±êßŞúÿÿÿÿ8­ ›Æş1J$2cf39278-7329-4cf6-ac6b-f52bf5bcee8c
+r	java:S106"+Replace this use of System.out by a logger.(Å¨¦ªşÿÿÿÿ8­ ›Æş1J$dbc61a2a-ff49-44f7-ac00-9859b0895527
+m	java:S106!"+Replace this use of System.out by a logger.(ß¼ƒê8® ›Æş1J$04e472b6-9cc2-4b8e-acd6-14716ca11467
+q
+java:S11723".Remove this unused method parameter "jugador".(İÚ«Ü8ø™‡Æş1J$a14b29e4-7f24-4618-906e-8a3a2978034b
+
+java:S18718"LThis branch's code block is the same as the block for the branch on line 52.(Ü‘¢58Ö˜×Æş1J$edb14ff8-67ac-42e5-b041-ba7c00dec53d
+
+java:S18716"LThis branch's code block is the same as the block for the branch on line 52.(æŸ÷8Ö˜×Æş1J$c03fb58b-c8bb-43ed-9b6a-8661a3591961
+
+java:S1871:"LThis branch's code block is the same as the block for the branch on line 52.(Ş»»Ô8Ö˜×Æş1J$0e6065c2-4249-4f4f-ace8-20769593bc1b
+
+java:S1172A">Remove these unused method parameters "jugador", "habitacion".(šïòÓ8ù™‡Æş1J$751aa5ff-cf84-4ce0-bc1d-ad0dca54f7b8
+ƒ	java:S125F"<This block of commented-out lines of code should be removed.(™˜”€ùÿÿÿÿ8ú™‡Æş1J$6a8c3941-a21a-476a-b295-d4f8c213abaf

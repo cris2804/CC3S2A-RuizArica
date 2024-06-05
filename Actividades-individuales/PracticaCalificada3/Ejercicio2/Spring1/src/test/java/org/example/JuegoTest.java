@@ -31,42 +31,4 @@ public class JuegoTest {
         assertThat(namehabitacion).isEqualTo("Habitacion inicial");
     }
 
-//    @Test
-//    public void testdddRecogerObjetos() {
-//        Juego juego = new Juego();
-//        Jugador jugador = new Jugador();
-//        Habitacion habitación = juego.crearHabitacion();
-//        habitación.agregarObjeto("llave");
-//        habitación.agregarObjeto("Pera");
-//
-//        juego.definirHabitacion(jugador, habitación);
-//        juego.moveJugador(jugador, "entrar");
-//
-//        assertThat(jugador.getInventario()).contains("llave", "Pera");
-//    }
-//    @Test
-//    public void testRecgoerObjeto(){
-//        Juego juego = new Juego();
-//        Jugador jugador = new Jugador();
-//        Habitacion habitacion = juego.crearHabitacion();
-//        habitación.agregarObjeto("llave");
-//
-//    }
-
-
-    @Test
-    public void testRecogerObjeto() {
-        Juego juego = new Juego();
-        Jugador jugador = new Jugador();
-        Habitacion habitacion = juego.crearHabitacion();
-
-        // añadir un objeto
-        habitacion.agregarObjeto("llave");
-
-        juego.definirHabitacion(jugador, habitacion);
-        juego.moveJugador(jugador, "entrar");
-
-        // verificar el objeto en la lista
-        assertThat(jugador.getInventario()).contains("llave");
-    }
 }

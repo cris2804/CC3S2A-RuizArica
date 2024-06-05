@@ -45,5 +45,3 @@ U
 %src/main/java/org/example/Objeto.java,9\8\983888a259de20ca73e2b145f462f954e4183505
 W
 'src/main/java/org/example/Acertijo.java,e\a\eaba3896acd316dba43e85c4642967ef19d1d492
-9
-	readme.md,2\7\275d783e298228506068436512433d343feb52aa
