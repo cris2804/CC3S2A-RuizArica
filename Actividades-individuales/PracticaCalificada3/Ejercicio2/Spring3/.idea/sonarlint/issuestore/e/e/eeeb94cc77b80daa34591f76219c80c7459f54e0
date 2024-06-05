@@ -1,0 +1,7 @@
+
+¯
+java:S4165"lRemove this useless assignment; "nameHabitacion" already holds the assigned value along all execution paths.(Ê­·«8ÓÖÏÅþ1J$4640feee-6a3f-4cf6-86fd-4c4008f9f837
+ž
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÆÌþ©8¹”ÁÆþ1
+r
+java:S1656"/Remove or correct this useless self-assignment.(Ê­·«8ØÖÏÅþ1J$8cc7fa83-70e8-4793-80a5-527dee90f2f8

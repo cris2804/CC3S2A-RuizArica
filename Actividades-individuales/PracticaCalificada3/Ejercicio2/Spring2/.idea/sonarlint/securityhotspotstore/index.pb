@@ -1,18 +1,6 @@
 
-S
-#src/main/java/org/example/Main.java,0\b\0ba1b9c7a4878802f938e331cc2d8a042087ec6b
-^
-.src/test/java/org/example/CountWordsTest2.java,1\4\1417f198ddca21cbbfe3bc42317ee2a88eb0abe6
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-_
-/src/test/java/org/example/LeftPadUtilsTest.java,e\b\ebed57e41dbd6fa78f9604fd512a808242dc3d7f
-g
-7src/test/java/org/example/ClumpsOnlyStructuralTest.java,e\a\ea379c417a1163de8f0545e2669404dbeb2d0f78
-Y
-)src/test/java/org/example/ClumpsTest.java,9\1\91dd8452caf04c427937e9fc149b06966af9daf7
-]
--src/test/java/org/example/CountWordsTest.java,8\d\8df06b7633d77d0e647feb6f44c5f563af497b3b
 7
 gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
 ;
@@ -35,8 +23,6 @@ V
 &src/main/java/org/example/Jugador.java,c\3\c3d7ed1bd38a9382f5d2e41b2c73f89f0442322a
 b
 2src/test/java/org/example/CrearHabitacionTest.java,e\9\e983348ec6c6b78d7fcaa300a6d960dd0adfb671
-Z
-*src/test/java/org/example/MoveJugador.java,c\5\c5b53b2833e6cb7de9628078a501fb8997441fa9
 X
 (src/test/java/org/example/JuegoTest.java,3\6\36a8c990427ea50373b2ad1ee3c3fb9390f0b40f
 ^
@@ -45,3 +31,5 @@ U
 %src/main/java/org/example/Objeto.java,9\8\983888a259de20ca73e2b145f462f954e4183505
 W
 'src/main/java/org/example/Acertijo.java,e\a\eaba3896acd316dba43e85c4642967ef19d1d492
+9
+	readme.md,2\7\275d783e298228506068436512433d343feb52aa

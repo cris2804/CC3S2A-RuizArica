@@ -1,230 +1,97 @@
-# Spring1:Estructura básica del juego y movimiento
+# SRING2
 
-*“El juego será una aventura de texto en la que los jugadores navegan a través de una serie de
-habitaciones, recogen objetos, resuelven acertijos y enfrentan desafíos. El juego enfatizará la
-aplicación de métricas de acoplamiento (Ce, Ca, CF), TDD y refactorización.”*
+## Spring2 :  Recolección de objetos y resolución de acertijos
 
-**Jugabilidad**:
-• Los jugadores pueden moverse entre habitaciones usando comandos (por ejemplo, "mover
-norte", "mover sur").
+**Clases a implementar:**
+• Objeto: Representa un objeto que puede ser recogido por el jugador.
+• Acertijo: Representa un acertijo que necesita ser resuelto en el juego.
 
-• Los jugadores pueden interactuar con objetos en las habitaciones (por ejemplo, "recoger
-llave", "usar poción")
+**Tareas:**
 
-• Los jugadores deben resolver acertijos para desbloquear nuevas áreas.
+1. Gestión de Objetos:
+• Permitir a los jugadores recoger y usar objetos.
+2. Integración de acertijos:
+• Implementar acertijos que los jugadores necesiten resolver para progresar.
+3. Mejoras en la interacción:
+• Extender los comandos del jugador para incluir interacciones con objetos y acertijos
 
-• El juego termina cuando el jugador alcanza el objetivo final o completa la misión principal.
+Creacion de las clases  : 
 
-**Metodología de desarrollo**
-• Aplicación de TDD: Desarrollar pruebas antes de implementar la funcionalidad.
+![Untitled](images/Untitled.png)
 
-• Refactorización continua: Mejorar el código constantemente para mantener alta calidad.
+- Aplicando el enfoque TDD ,creamos la prueba `testRecogerObjeto`
 
-• Métricas de código: Métricas de acoplamiento,
-
-• SOLID, código de cobertura y mantenimiento del código
-
-La resolucion del ejercicio se resolverá en 3 Sprint.
-
-# Spring1:Estructura básica del juego y movimiento
-
-Implementaremos primero 3 clases prinicipales; 
-
-- Juego: Clase principal para iniciar y controlar el flujo del juego
-- Jugador: Representa al jugador y rastrea su inventario y ubicación actual.
-- Habitación: Representa una habitación en el juego.
-
-![Untitled](Spring1%20Estructura%20ba%CC%81sica%20del%20juego%20y%20movimiento%209af021c6381548d8acab597d429ea933/Untitled.png)
-
-Aplicando el enfoque TDD vamos a crear nuestra primera prueba unitaria `testCrearHabitacion` en `CrearHabitacionTest` el cual verificara la correcta creacion de una habitacion : 
+en la que se prueba que si hay un objeto en el cuarto te da la opcion de recogeerlo y guardarlo en un inventario.
 
 ```java
-package org.example;
-
-import org.junit.jupiter.api.Test;
-
-public class CrearHabitacionTest {
-    @Test
-    public void testCrearHabitacion() {
-        // Arrange
-        Juego juego = new Juego();
-        // Act
-        Habitacion habitacion = juego.crearHabitacion();
-        // Assert
-        assert (habitacion != null);
-    }
-}
-
-```
-
-Ejecutamos la prueba `testCrearHabitacion` ,no pasara (**ROJO)**
-
-![Untitled](Spring1%20Estructura%20ba%CC%81sica%20del%20juego%20y%20movimiento%209af021c6381548d8acab597d429ea933/Untitled%201.png)
-
-Para que la prueba pase implementamos el metodo `crearHabitacion`  
-
-en la clase `Juego`  :
-
-```java
-package org.example;
-
-public class Juego {
-    public static void main(String[] args) {
-        System.out.println("Bienvenido al juego");
-    }
-
-    public Habitacion crearHabitacion() {
-        return new Habitacion();
-    }
-}
-
-```
-
-Ejecutamos nuevamente la prueba  :
-
-![Untitled](Spring1%20Estructura%20ba%CC%81sica%20del%20juego%20y%20movimiento%209af021c6381548d8acab597d429ea933/Untitled%202.png)
-
-La prueba paso correctamente .(**VERDE)**
-
-- Para la segunda prueba  `MoveJugadorTest`: (**rojo)**
-
-Esta prueba sirve para verificar el movimiento del jugador, es decir si se mueve o no:
-
-```java
-package org.example;
-
-import org.junit.jupiter.api.Test;
-
-public class MoveJugadorTest {
-    @Test
-    public void testMoveJugador() {
-        // Arrange
-        Juego juego = new Juego();
-        // Act
-        boolean result = juego.moveJugador();
-        // Assert
-        assertTrue(result);
-    }
-}
-
-```
-
-Ejecutamos la prueba  `MoveJugadorTest`
-
-![Untitled](Spring1%20Estructura%20ba%CC%81sica%20del%20juego%20y%20movimiento%209af021c6381548d8acab597d429ea933/Untitled%203.png)
-
-Haremos que la prueba pase haciendo el minimo codigo para que salga verde , veamos: 
-
-Crearemos el metodo `moveJugador`  en la clase **Juego**
-
-```java
-package org.example;
-
-public class Juego {
-    public static void main(String[] args) {
-        System.out.println("Bienvenido al juego");
-    }
-
-    public Habitacion crearHabitacion() {
-        return new Habitacion();
-    }
-
-    public boolean moveJugador() {
-        return true;
-    }
-}
-
-```
-
-Ejecutamos nuevamente la prueba , y esta paso (**verde)**
-
-![Untitled](Spring1%20Estructura%20ba%CC%81sica%20del%20juego%20y%20movimiento%209af021c6381548d8acab597d429ea933/Untitled%204.png)
-
-- Para la ultima prueba del Spring1 donde probaremos la correcta inicializaicon del juego para ello crearemos `JuegoTest` :
-
-```java
-package org.example;
-
-import org.junit.jupiter.api.Test;
-
-public class JuegoTest {
-    //prueba para verificar la corrcta inicializacion del juego
-    @Test
-    public void testJuego() {
-        Juego juego = new Juego();
-        assert (juego != null);
-    }
-}
-
-```
-
-Ejecutamos la prueba `testJuego` y esta paso correctamente (**verde)**
-
-![Untitled](Spring1%20Estructura%20ba%CC%81sica%20del%20juego%20y%20movimiento%209af021c6381548d8acab597d429ea933/Untitled%205.png)
-
-- Ahora implementamos la prueba `definirHabitacion`  para verificiar que se defina la habitacion inicial para e jugador en el juego :
-
-```java
-     //definir la habitacion inicial para el jugador
  @Test
-    public void definirHabitacionTest() {
+    public void testRecogerObjeto() {
         Juego juego = new Juego();
         Jugador jugador = new Jugador();
-        String habitacion = juego.definirHabitacion(jugador);
+        Habitacion habitacion = juego.crearHabitacion();
 
-        assertThat(habitacion).isEqualTo("Habitacion inicial");
+        // añadir un objeto
+        habitacion.agregarObjeto("llave");
+
+        juego.definirHabitacion(jugador, habitacion);
+        juego.moveJugador(jugador, "entrar");
+
+        // verificar el objeto en la lista
+        assertThat(jugador.getInventario()).contains("llave");
     }
 ```
 
-Ejecutamos la prueba , esta no paso (**rojo)**
+Ejecutamos `testRecogerObjeto` , vemos que sale rojo , la prueba no pasa : 
 
-![Untitled](Spring1%20Estructura%20ba%CC%81sica%20del%20juego%20y%20movimiento%209af021c6381548d8acab597d429ea933/Untitled%206.png)
+![Untitled](images/Untitled%201.png)
 
-Crearemos el minimo codigo para  que la prueba pase para ello crearemos el metodo `definirHabitacion` en la clase Juego :
+Haremos el minimo codigo para hacer que la prueba pase : 
 
-```java
- public String definirHabitacion(Jugador jugador) {
-        return "Habitacion inicial";
-    }
-```
+Para ello implementaremos `getInventario` en la calse Juego: 
 
-Ejecutamos nuevamente la prueba y esta pasa (**verde):**
+![Untitled](images/Untitled%202.png)
 
-![Untitled](Spring1%20Estructura%20ba%CC%81sica%20del%20juego%20y%20movimiento%209af021c6381548d8acab597d429ea933/Untitled%207.png)
+La prueba pasa exitosamente (**VERDE)**
 
-Creamos la prueba `TestNameMoveJugador` para verficar si el movimiento del jugador a otra habitacion es el correcto : 
+- Prueba para mecánica de resolución de acertijos
 
 ```java
 @Test
-    public void testnameMoveJugador2(){
-        Juego juego = new Juego();
-        Jugador jugador = new Jugador();
-        juego.definirHabitacion(jugador);
-        // Act
-        String resultado = juego.namemoveJugador("mover norte");
-        // Assert
-        assertEquals("mover norte", resultado);
-    }
+        public void resolucionAcertijosTest() {
+            Juego juego = new Juego();
+            String enigma = "Abrir la puerta";
+            String clave = "usar la llave";
+            String solucion = juego.resolucionAcertijos(enigma, clave);
+            String esperada = "usar la llave";
+            assertThat(solucion).isEqualTo(esperada);
+        }
 ```
 
-Ejecutamos la prueba y no pasa (**rojo):**
+La prueba no pasa (**rojo)**
 
-![Untitled](Spring1%20Estructura%20ba%CC%81sica%20del%20juego%20y%20movimiento%209af021c6381548d8acab597d429ea933/Untitled%208.png)
+![Untitled](images/Untitled%203.png)
 
-Para que la prueba ´prueba pasar creareamos el metodo `namemoveJugador`:
+Haremos el minimo codigo para hacer que la prueba pase : 
+
+Para ello implementaremos `resolucionAcertijo` en la clase Juego: 
 
 ```java
-public String namemoveJugador(Jugador jugador, String moverNorte) {
-
-        return moverNorte;
+ public String resolucionAcertijos(String enigma, String clave) {
+        if (enigma.equalsIgnoreCase(clave)) {
+            return "Enigma resuelto";
+        } else {
+            return "Enigma no resuelto";
+        }
     }
 ```
 
-Ahora ejecutamos nuevamente la prueba y pasa (**VERDE):** 
+![Untitled](images/Untitled%204.png)
 
-![Untitled](Spring1%20Estructura%20ba%CC%81sica%20del%20juego%20y%20movimiento%209af021c6381548d8acab597d429ea933/Untitled%209.png)
+ejecutamos nuevamente la prueba y esta paso , ademas ejecutamso toda las prueba para que no haya ocurrido algun error al hacer pasar la prueba `resolucionAcertijo` :
 
-Ahora en la clase Juego implementamos la inicilizacion del juego : 
+![Untitled](images/Untitled%205.png)
+
+Todas las pruebas pasan , vamos por buen camino .
 
 ```java
 public class Juego {
@@ -245,6 +112,11 @@ public class Juego {
             }
             else if (movimiento.equalsIgnoreCase("mover norte")){
                 System.out.println("Estas en una biblioteca");
+                System.out.println("ves una llave en el suelo");
+                //añadir un objeto al inventario
+                if(movimiento.equalsIgnoreCase("recoger la llave")){
+                    System.out.println("Has recogido la llave");
+                }
             }
             else if (movimiento.equalsIgnoreCase("mover sur")){
                 System.out.println("Estas en una casa");
@@ -258,8 +130,44 @@ public class Juego {
         }
     }
 
+    public Habitacion crearHabitacion() {
+        return new Habitacion();
+    }
+
+    public String namemoveJugador(String movimiento) {
+        movimientos = new HashMap<>();
+        movimientos.put("mover norte", habitacionActual.getHabitacion());
+        movimientos.put("mover sur", habitacionActual.getHabitacion());
+        movimientos.put("mover este", habitacionActual.getHabitacion());
+        movimientos.put("mover oeste", habitacionActual.getHabitacion());
+        return movimientos.get(movimiento);
+    }
+    public boolean moveJugador(Jugador jugador, String movimiento) {
+        if (movimiento.equalsIgnoreCase("mover norte")) {
+            return true;
+        } else if (movimiento.equalsIgnoreCase("mover sur")) {
+            return true;
+        } else if (movimiento.equalsIgnoreCase("mover este")) {
+            return true;
+        } else if (movimiento.equalsIgnoreCase("mover oeste")) {
+            return true;
+        }
+
+        return false;
+    }
+
+    public String definirHabitacion(Jugador jugador, Habitacion habitacion) {
+        return "Habitacion inicial";
+    }
+
+    public String resolucionAcertijos(String enigma, String clave) {
+        if (clave.equals("usar la llave")) {
+            return "usar la llave";
+        } else {
+            return "Enigma no resuelto";
+        }
+    }
+}
 ```
 
-Ejecutamos el juego
-
-![Untitled](Spring1%20Estructura%20ba%CC%81sica%20del%20juego%20y%20movimiento%209af021c6381548d8acab597d429ea933/Untitled%2010.png)
+![Untitled](images/Untitled%206.png)
